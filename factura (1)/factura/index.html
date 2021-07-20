@@ -1,0 +1,64 @@
+
+</html>
+<html>
+    <head>
+    <title>Realizar Factura</title>
+   <script language="javascript" type="text/javascript"
+           src="{{url_for('static',filename='js/prueba.js')}}"></script>
+   <link rel="stylesheet" href="estilos.css">
+   </head>
+  <body >
+   
+ <form class="form1" name="factura" id="factura" action="{{ url_for('getDatos') }}"
+     method="post"   id="form2" onload="limpiarFormulario()">
+     <h5>formulario de factura </h5>
+  <div class="dvp">
+    <div class="labels">
+
+        <label class="lb1" for="i1">Nombre del cliente: </label>
+        <div class="inputs">
+          <input id="i1" type="text" name="nombre1" placeholder="Cliente" />
+          </div>
+
+          <label class="lb1" for="i2">Nombre del producto: </label>
+          <div class="inputs">
+            <input id="i2" type="text" name="producto1"  />
+          </div>
+
+          <label class="lb1" for="i4">Precio del producto: </label>
+          <div class="inputs">
+            <input id="i4" type="number" name="precio1" step="any" maxlength="7" onkeyup="calculo()" />
+          </div>
+
+          <label class="lb1" for="i3">Cantidad del producto: </label>
+          <div class="inputs">
+          <input id="i3" type="number" name="cantidad1" onkeyup="calculo()"/>
+        </div>
+        
+          <label class="lb1" for="i5">Subtotal: </label>
+          <div class="inputs">
+          <input id="i5" type="text"  name="subt" value="0.00"  />
+           </div>
+
+          <label class="lb1" for="i6">Iva: </label>
+          <div class="inputs">
+          <input id="i6" type="text" name="iva" value="0.00"  />
+        </div>
+
+          <label class="lb1" for="i7">Total a pagar: </label>
+          <div class="inputs">
+          <input id="i7" type="text" name="total" maxlength="9" value="0.00"/>
+
+        </div>
+    
+  </div>
+       <div class="btns">
+   
+       <button name ="">Guardar</button>
+       <a  href="{{ url_for('prueba') }}" class="btn1">enlace</a>
+
+     </div>
+ </form>
+
+  </body>
+</html>

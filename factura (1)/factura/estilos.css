@@ -1,0 +1,40 @@
+* {
+margin: 0;
+padding:0;
+box-sizing: border-box;
+
+}
+body{
+    font-family: arial;
+}
+.form1 {
+width: 500px;
+height:550px;
+background: #4e4d4d;
+margin: auto;
+margin-top: 100px;
+box-shadow: 7px 13px 37px #017bab;
+color: white;
+
+}
+
+    
+.form1 h5{
+
+    margin:0;
+    text-align:center;
+    height:40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size:20px;
+}
+
+.inputs{
+    width: 100%;
+    border: 1px solid #017bab;
+    margin-bottom: 15x;
+    padding: 11px 10px;
+    background: #252323;
+    font-size:14px;
+    font-weight: bold;
+}
